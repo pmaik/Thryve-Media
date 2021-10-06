@@ -1,0 +1,1457 @@
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: url(./images/subtle_dot.png) repeat;
+}
+
+.part1 {
+    background: url(./images/bg-slide1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: aliceblue;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+.part1Div1 {
+    padding-top: 185px;
+}
+
+.logo {
+    text-align: center;
+    display: block;
+}
+
+.slogan {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+    font-size: 70px;
+    line-height: 85px;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 1290px) {
+    .slogan {
+        font-size: 50px;
+        line-height: 60px;
+        margin-bottom: 40px;
+    }
+}
+
+.part1-ul {
+    margin: 0 auto;
+    height: 30px;
+    width: 435px;
+}
+
+.part1-ul li {
+    font-family: gotham_light;
+    color: #fff;
+    font-size: 25px;
+    float: left;
+    line-height: 25px;
+    height: 25px;
+    padding: 0 30px;
+    border-right: 1px solid #cdd8e1;
+}
+
+.part1Div1 li a {
+    color: #cdd8e1;
+    transition: all 500ms ease;
+}
+
+.part1Div1 li.lastItem {
+    border-right: none;
+}
+
+.header {
+    position: absolute;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+    height: 62px;
+}
+
+.header:hover {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6) !important;
+    transition: all 0.5s ease 0.1s;
+}
+
+.Navbar {
+    padding-top: 25px;
+    margin-left: 250px;
+    margin-right: 250px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.header .Navbar li a {
+    color: #fff;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.header .Navbar li a:hover {
+    text-decoration: underline;
+    text-decoration-color: #80aa37;
+    text-decoration-style: solid;
+    text-decoration-thickness: 3px;
+}
+
+.header .Navbar .navImg {
+    display: none;
+}
+
+.sticky {
+    top: 0;
+    bottom: auto;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+}
+
+.sticky .Navbar .navImg1{
+    display: block;
+    animation-duration: 1s;
+    animation-name: poping;
+    width: 120px;
+}
+
+@keyframes poping {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 120px;
+    }
+}
+
+
+
+/* Part-1 For i-Pad */
+@media only screen and (min-width: 630px) and (max-width: 1000px )  {
+
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    /* .part1{
+        background-position-x: -600px;
+    } */
+    .dropDown {
+        background: url(./images/bg-dropDown.png) no-repeat center center;
+        display: block;
+        width: 100%;
+        height: 50px;
+    }
+
+    .header{
+        top: 0;
+        bottom: auto;
+        position: fixed;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 100;
+        height: 50px;
+    }
+    
+    .Navbar .navLogo{
+        display: none;
+    }
+
+    .Navbar{
+        display: none;
+        flex-direction:column;
+        background: rgba(162, 213, 87, 0.9);
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        padding-top: 0px;
+        margin-left: auto;
+    }
+    .Navbar li a{
+        border-bottom: none !important;
+        font-size: 26px !important;
+        margin: 0;
+        display: block;
+        text-align: center;
+        line-height: 50px;
+    }
+
+}
+
+/* Part-1 For Mobile Mode */
+@media only screen and (max-width: 631px ){
+    .part1{
+        background-position-x: -500px;
+        background-attachment: scroll;
+    }
+
+    .dropDown {
+        background: url(./images/bg-dropDown.png) no-repeat center center;
+        display: block;
+        width: 100%;
+        height: 35px;
+    }
+
+    .header{
+        top: 0;
+        bottom: auto;
+        position: fixed;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 100;
+        height: 35px;
+    }
+    
+    .Navbar .navLogo{
+        display: none;
+    }
+
+    .Navbar{
+        display: none;
+        flex-direction:column;
+        background: rgba(162, 213, 87, 0.9);
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        padding-top: 0px;
+        margin-left: auto;
+    }
+
+    .Navbar li a{
+        border-bottom: none !important;
+        font-size: 26px !important;
+        margin: 0;
+        display: block;
+        text-align: center;
+        line-height: 50px;
+    }
+
+    .part1Div1 {
+        padding-top: 100px;
+    }
+
+    .logo img{
+        max-width: 90%;
+    }
+
+    .slogan{
+        padding: 0 2%;
+        font-size: 25px;
+        line-height: 35px;
+        font-weight: 100;
+    }
+
+    .part1-ul {
+        margin: 0 auto;
+        width: 320px;
+    }
+}
+
+
+
+/* Part 2 */
+.part2 {
+    text-align: center;
+    padding-top: 130px;
+    padding-bottom: 100px;
+}
+
+.welcome {
+    font-family: gotham_light;
+    font-size: 70px;
+    padding-bottom: 25px;
+    color: #232533;
+}
+
+.about {
+    font-family: gotham_light;
+    font-size: 26px;
+    padding-top: 15px;
+    color: #5f5d5d;
+    line-height: 35px;
+}
+
+.about span {
+    font-family: gotham_bold;
+    font-weight: 1000;
+    color: #80aa37;
+}
+
+.thryvePartners h5 {
+    margin-top: 70px;
+    font-family: gotham_light;
+    font-size: 30px;
+    padding-top: 15px;
+    color: #5f5d5d;
+    line-height: 35px;
+    margin-bottom: 35px;
+}
+
+.Logos {
+    display: flex;
+    justify-content: center;
+}
+
+.Logos img {
+    vertical-align: middle;
+    margin: 0 25px 25px;
+}
+
+.Logos .img123 {
+    padding-top: 10px;
+    height: 35px;
+}
+
+/* Part-2 i-Pad Mode */
+@media only screen and (min-width: 630px) and (max-width: 1000px ) {
+    
+    .part2 {
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+
+    .welcome {
+        font-size: 50px;
+        padding-bottom: 10px;
+        font-size: 36px;
+        padding-bottom: 10px;
+    }
+
+    .about {
+        font-size: 24px;
+        line-height: 30px;
+        padding-top: 10px;
+    }
+
+    .Logos img {
+        vertical-align: middle;
+        margin: 0 15px 15px;
+    }
+    .Logos .img123 {
+        padding-top: 13px;
+        height: 32px;
+    }
+}
+
+/* Part-2 For Mobile Mode */
+@media only screen and (max-width: 631px ){
+    .part2{
+        padding: 50px 4% 40px;
+        text-align: center;
+    }
+
+    .welcome {
+        font-size: 35px;
+        padding-bottom: 0px;
+    }
+    .about{
+        font-size: 20px;
+        line-height: 25px;
+        padding-top: 10px; 
+    }
+    
+    .thryvePartners h5{
+        margin-top: 30px;
+        font-size: 25px;
+        padding-top: 15px;
+        line-height: 5px;
+        margin-bottom: 35px;
+    }
+    
+    .Logos {
+        flex-direction:column;
+        align-items: center;
+    }
+
+    .Logos img {
+        padding-top: 10px;
+        height: 50px;
+        width: 100px;
+    }
+}
+
+
+/* Part 3*/
+.part3{
+    background: url(./images/bg-part2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    height: 100%;
+    /* width: 100%; */
+    min-height: 800px;
+}
+
+.part3 .part3-ul{
+    background: rgba(0,0,0,0.3);
+    display: flex;
+    /* justify-content:space-between; */
+    min-height: 800px;
+    color:#fff;
+    height: 100%;
+}
+
+.part3 .part3-ul li{
+    width:34%;
+}
+
+.part3 .part3-ul li:hover{
+    background-color: rgba(162, 213, 87, 0.7);
+    z-index: 10;
+}
+
+.part3 .part3-ul li button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.part3 .part3-ul .video-li{
+    background: rgba(0,0,0,0.3);
+}
+
+.part3 .part3-ul .btn img{
+    padding-top: 150px;
+    text-align: center;
+}
+
+.part3 .part3-ul h1{
+    margin: 25px auto;
+    font-size: 22px;
+    font-family: gotham_bold;
+    font-weight: bolder;
+}
+
+.part3 .part3-ul p{
+    font-size: 20px;
+    /* font-family: gotham_light; */
+    font-weight:10;
+    /* text-transform: none; */
+    line-height: 34px;
+    width: 90%;
+    padding: 10% auto;
+}
+
+.part3 .part3-ul .close{
+    text-align: center;
+    border: 2px solid rgb(172, 169, 169);
+    border-radius: 100%;
+}
+.part3 .part3-ul .close img{
+    padding: 10px;
+}
+
+/* Animation For Search Part */
+.part3 .part3-ul li .search-hide{
+    display: none;
+}
+
+.part3 .part3-ul li .search-hide1{
+    display: block;
+    animation-duration: 1.5s;
+}
+
+.part3 .part3-ul li .btn .search-img{
+    animation-duration: 1s;
+    animation-name: searchHiding;
+}
+
+@keyframes searchHiding {
+    from {
+        width: 150px;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.part3 .part3-ul li .btn .search-img1{
+    padding-top: 70px;
+    animation-duration: 1s;
+    animation-name: searchShowing;
+    width: 150px;
+}
+
+@keyframes searchShowing {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 150px;
+    }
+}
+
+/* Animation For Video Part */
+.part3 .part3-ul li .video-hide{
+    display: none;
+}
+
+.part3 .part3-ul li .video-hide1{
+    display: block;
+    animation-duration: 1.5s;
+}
+
+.part3 .part3-ul li .btn .video-img{
+    animation-duration: 1s;
+    animation-name: videoHiding;
+}
+
+@keyframes videoHiding {
+    from {
+        width: 150px;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.part3 .part3-ul li .btn .video-img1{
+    padding-top: 70px;
+    animation-duration: 1s;
+    animation-name: videoShowing;
+    width: 150px;
+}
+
+@keyframes videoShowing {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 150px;
+    }
+}
+
+
+/* Animation For mobile Part */
+.part3 .part3-ul li .mobile-hide{
+    display: none;
+}
+
+.part3 .part3-ul li .mobile-hide1{
+    display: block;
+    animation-duration: 1.5s;
+}
+
+.part3 .part3-ul li .btn .mobile-img{
+    animation-duration: 1s;
+    animation-name: mobileHiding;
+}
+
+@keyframes mobileHiding {
+    from {
+        width: 150px;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.part3 .part3-ul li .btn .mobile-img1{
+    padding-top: 70px;
+    animation-duration: 1s;
+    animation-name: mobileShowing;
+    width: 150px;
+}
+
+@keyframes mobileShowing {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 150px;
+    }
+}
+
+/* Part-3 i-Pad */
+@media only screen and (max-width: 1000px ) {
+
+    .part3{
+        background:#eef4f6;
+        height: auto;
+        width:106%;
+        padding-bottom: 70px;
+    }
+
+    .part3 .part3-ul h1 {
+        color: #42444e;
+    }
+
+    .part3 .part3-ul{
+        background:none !important;
+        flex-direction: column;
+        align-items: center;
+        color: #42444e;
+        /* height: 100%; */
+    }
+    .part3 .part3-ul li{
+        width:80%;
+    }
+
+    .part3 .part3-ul li:hover{
+        background-color:none !important;
+    }
+    
+    .part3 .part3-ul .search-li{
+        background: none !important;
+    }
+    .part3 .part3-ul .video-li{
+        background: none !important;
+    }
+    .part3 .part3-ul .mobile-li{
+        background: none !important;
+    }
+    
+    .part3 .part3-ul .close{
+        display: none;
+    }
+
+    .part3 .part3-ul li .search-hide{
+        display: block;
+    }
+
+
+
+    /* For Video */
+    .part3 .part3-ul li .video-hide{
+        display: block;
+    }
+    .part3 .part3-ul li .mobile-hide{
+        display: block;
+    }
+    
+    .part3 .part3-ul li .btn .search-img{
+        animation-name:none;
+        padding-top: 70px;
+        width: 150px;
+    }
+    .part3 .part3-ul li .btn .video-img{
+        animation-name:none;
+        padding-top: 70px;
+        width: 150px;
+    }
+    .part3 .part3-ul li .btn .mobile-img{
+        animation-name:none;
+        padding-top: 70px;
+        width: 150px;
+    }
+    
+    .part3 .part3-ul li .btn .mobile-img1{
+        animation-duration:none;
+        animation-name:none;
+    }
+}
+
+
+/* Part 4 */
+.part4{
+    margin-top: 150px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.info {
+    font-family: gotham_light;
+    font-size: 26px;
+    padding-top: 15px;
+    color: #5f5d5d;
+    line-height: 35px;
+    width: 85%;
+    margin-left: 125px;
+}
+
+.part4 hr{
+    margin-top: 65px;
+    border: 2px solid #a2d557;
+    width: 130px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.part4-ul{
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 10%;
+}
+.part4-ul div{
+    margin-top: 30px;
+    color: #26272c;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 36px;
+    font-size: 22px;
+    font-weight: 750;
+}
+
+/* Part-4 i-Pad */
+@media only screen and (min-width: 630px) and (max-width: 1000px )  {
+
+    .part4 {
+        margin-top: 80px;
+        padding-bottom: 30px;
+    }
+    .part4 .welcome{
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        color: #525253;
+        padding-bottom: 20px;
+    }
+
+    .info {
+        margin-left: 43px;
+        font-size: 20px;
+        line-height: 35px;
+        padding-bottom: 10px;
+        width: 90%;
+    }
+
+    .part4-ul{
+        flex-wrap:wrap;
+    }
+
+    .part4-ul li{
+        font-size: 15px;
+        line-height: 30px;
+        width: 46%;
+        padding-bottom: 60px;
+        font-family: gotham_bold;
+    }
+
+}
+
+/* Part-4 For Mobile Mode */
+@media only screen and (max-width: 631px ){
+    .part4 {
+        margin-top: 60px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    .info {
+        font-size: 20px;
+        line-height: 30px;
+        width: 90%;
+        margin-left: 0px;
+        padding-left: 10px;
+    }
+
+    .part4-ul{
+        margin-top: 65px;
+        flex-direction: column;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .part4-ul div {
+        margin-top: 5px;
+        line-height: 26px;
+        font-size: 18px;
+    }
+    .part4-ul li{
+        margin-bottom: 40px;
+    }
+}
+
+
+/* Part 5*/
+.part5 {
+    background: #eeeff4;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content:space-between;
+}
+
+
+.part5 .account{
+    color: #42444e;
+    text-align: center;
+}
+
+.part5 .part5-div1{
+    border-right: 3px solid #a2d557;
+    width: 40%;
+    padding: 70px 5% 65px 4%;
+}
+
+.part5 .part5-div2{
+    width: 40%;
+    padding: 70px 4% 65px 3%;
+}
+
+.part5 .account h1{
+    font-size: 40px;
+    font-family: gotham_bold;
+    text-transform: capitalize;
+    font-weight: 1000;
+    margin-top: 20px;
+    margin-bottom: 65px;
+}
+
+.part5 .account p{
+    font-size: 28px;
+    font-family: gotham_book;
+    color: #42444e;
+    text-align: center;
+    line-height: 45px;
+    /* width: 100%; */
+}
+
+/* Part-5 i-Pad Mode */
+@media only screen and (min-width: 630px) and (max-width: 1000px )  {
+    .part5 {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        flex-wrap: wrap;
+        padding-left: 30px;
+        padding-right: 30px;
+        min-height: auto;
+    }
+
+    .part5 .part5-div1 {
+        border-right: none;
+        border-bottom: 3px solid #a2d557;
+    }
+
+    .part5 .account {
+        width: 100%;
+    }
+
+    .part5 .account img{
+        height: 75px;
+    }
+
+    .part5 .account h1 {
+        font-size: 25px;
+        font-weight: 600;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .part5 .account p {
+        font-size: 21px;
+        font-family: gotham_light;
+        font-size: 18px;
+        line-height: 33px;
+    }
+}
+
+/* Part-5 For Mobile Mode */
+@media only screen and (max-width: 631px ){
+    .part5 {
+        padding: 100px 20px 70px 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .part5 .account {
+        width: 90%;
+    }
+
+    .part5 .part5-div1 {
+        border-right: none;
+        border-bottom: 3px solid #a2d557;
+        padding: 0px 5% 50px 4%;
+    }
+
+    .part5 .part5-div2 {
+        padding: 50px 5% 0px 4%;
+    }
+
+    .part5 .account img{
+        height: 75px;
+    }
+
+    .part5 .account h1 {
+        font-size: 25px;
+        font-weight: 600;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .part5 .account p {
+        font-size: 21px;
+        font-family: gotham_light;
+        font-size: 18px;
+        line-height: 33px;
+    }
+}
+
+
+
+/* Part 6 */
+.part6{
+    background: url(./images/slide6.jpg) no-repeat;
+    padding-top: 145px;
+    padding-bottom: 135px;
+    color: #fff;
+    text-align: center;
+    background-size: cover;
+    /* word-wrap: break-word; */
+}
+.part6-heading{
+    font-size: 60px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bolder;
+    margin-bottom: 55px;
+}
+
+.part6-para{
+    font-size: 30px;
+    margin-bottom: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.part6-ul li{
+    line-height: 37px;
+    font-family: gotham_book;
+    font-size: 25px;
+    margin-bottom: 90px;
+}
+.part6 .logo2{
+    display: none;
+}
+
+/* Part-6 i-Pad Mode */
+@media only screen and (min-width: 630px) and (max-width: 1000px )  {
+
+    .part6{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .part6 .logo1{
+        width: 90%;
+    }
+
+    .part6-heading{
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    .part6-para{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .part6-ul li{
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 50px;
+    }
+    
+}
+
+/* Part-6 For Mobile Mode */
+@media only screen and (max-width: 631px ){
+
+    .part6 {
+        padding-top: 80px;
+        padding-bottom: 70px;
+    }
+
+    .part6-heading {
+        font-size: 35px;
+        margin-bottom: 20px;
+        width: 95%;
+    }
+
+    .part6-para {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+
+    .part6-ul li {
+        line-height: 25px;
+        font-family: gotham_book;
+        font-size: 17px;
+        margin-bottom: 50px;
+        width:97%;
+    }
+    
+    .part6 .logo1{
+        display: none;
+    }
+
+    .part6 .logo2{
+        display: block;
+        width: 100%;
+    }
+}
+
+
+/* Part 7 */
+.part7{
+    padding-top: 150px;
+    padding-bottom: 135px;
+}
+.alignment {
+    width: 1000px;
+    margin: 0 auto;
+}
+.part7 h4{
+    color: #232533;
+    font-size: 60px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+.part7 p{
+    color: #42444e;
+    font-size: 28px;
+    line-height: 40px;
+    font-family: gotham_book;
+    margin-bottom: 40px;
+}
+
+.part7 .formThankyou h5{
+    color: #232533;
+    font-size: 60px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bolder;
+    margin-bottom: 55px;
+}
+.part7 .formThankyou h6{
+    color: #42444e;
+    font-size: 28px;
+    line-height: 40px;
+    font-family: gotham_book;
+}
+
+.part7 .formThankyou{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: -45px;
+    top: 50%;
+    display: none;
+}
+
+.part7-div{
+    min-height: 470px;
+}
+
+.div-form ul li{
+    margin-bottom: 26px;
+    position: relative;
+}
+
+.part7 .div-form{
+    width: 645px;
+    font-family: gotham_book;
+    padding: 25px 0 0;
+    float: left;
+    min-height: 420px;
+    position: relative;
+}
+
+.part7 .div-form ul li input{
+    font-family: gotham_book;
+    background: #eef4f6;
+    width: 340px;
+    padding: 15px;
+    border: 2px solid #eef4f6;
+    outline: none;
+    font-size: 16px;
+    color: #999ca7;
+    border-radius: 3px;
+}
+
+.part7 .div-form ul li textarea{
+    color: #999ca7;
+    font-family: Arial;
+    background: #eef4f6;
+    padding: 15px;
+    font-size: 16px;
+    width: 545px;
+    height: 150px;
+    border-radius: 3px;
+    /* resize: none; */
+    /* outline: none; */
+    border: 2px solid #eef4f6;
+}
+
+.part7 .div-form ul li .formSubmit{
+    color: #fff;
+    border: 0;
+    background: #a2d557;
+    font-size: 22px;
+    cursor: pointer;
+    width: 370px;
+    font-family: gotham_medium;
+}
+
+.part7 .div-form ul li input:focus{
+    background: #fff;
+    border-color: #a2d557;
+    color: #42444e;
+}
+
+.part7 .div-form ul li textarea:focus{
+    background: #fff;
+    border-color: #a2d557;
+    color: #42444e;
+}
+
+ul.contact{
+    float: left;
+    width: 275px;
+    padding: 25px 0 0 60px;
+    border-left: 3px solid #a2d557;
+}
+
+ul.contact li p {
+    font-size: 20px;
+    font-family: gotham_book;
+    color: #42444e;
+    line-height: 30px;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+ul.contact li{
+    margin-bottom: 55px;
+}
+ul.contact li.email {
+    margin-bottom: 0;
+}
+
+.part7 .part7-div .contact .reachIcon {
+    width: 32px;
+    height: 35px;
+    display: block;
+    margin: 0 0 15px;
+}
+
+.part7 .part7-div .contact .phone .reachIcon {
+    background: url(./images/part7-mobile.png) no-repeat;
+}
+.part7 .part7-div .contact .location .reachIcon {
+    background: url(./images/location.png) no-repeat;
+}
+.part7 .part7-div .contact .email .reachIcon {
+    background: url(./images/email.png) no-repeat;
+}
+
+@media (max-width: 1290px){
+    .part7 .div-form {
+        padding-left: 10px;
+        width: 635px;
+        min-height: 150px;
+    }
+    .part7 p{
+        font-size: 22px;
+        text-align: center;
+    }
+}
+
+/* Part-7 i-Pad Mode */
+@media only screen and (min-width: 630px) and (max-width: 1000px )  {
+    .part7{
+        padding: 75px 4% 60px;
+    }
+
+    .alignment {
+        width: auto;
+        margin: 0 auto;
+    }
+    
+    .part7 h4 {
+        font-size: 36px;
+        padding-bottom: 15px;
+        font-family: gotham_light;
+    }
+    .part7 p{
+        margin-bottom: 40px;
+        font-family: gotham_light;
+        font-size: 20px;
+        line-height: 33px;
+    }
+    
+    .part7 .div-form {
+        padding: 0;
+        border: none;
+        margin-bottom: 60px;
+        width: 100%;
+        float: none;
+    }
+
+    .part7 .div-form ul li input{
+        width:95%;
+    }
+    .part7 .div-form ul li textarea{
+        width:95%;
+    }
+    .part7 .div-form ul li .formSubmit{
+        width:100%;
+    }
+
+    ul.contact{
+        float: none;
+        width: auto;
+        padding: 0;
+        border-left:none;
+    }
+
+    ul.contact li{
+        margin: 0 1% 15px;
+        display: inline-block;
+        width: 30%;
+        vertical-align: top;
+    }
+
+    .part7 .part7-div .contact .reachIcon {
+        margin: 0 auto 16px;
+    }
+
+    ul.contact li p{
+        text-align: center;
+    }
+    
+}
+
+/* Part-7 For Mobile Mode */
+@media only screen and (max-width: 631px ) {
+
+    .part7{
+        padding: 75px 4% 60px;
+    }
+
+    .alignment {
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .part7 .part7-div{
+        display: block;
+        min-width: none;
+    }
+    .part7-div {
+        min-height: none !important;
+    }
+
+    .part7 h4 {
+        font-size: 36px;
+        padding-bottom: 15px;
+        color: #4d5060;
+    }
+
+    .part7 p {
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 25px;
+    }
+
+    .part7 .div-form {
+        padding: 0;
+        border: none;
+        margin-bottom: 60px;
+        width: 100%;
+        float: none;
+    }
+
+    .part7 .div-form ul li input{
+        width:88%;
+    }
+    .part7 .div-form ul li textarea{
+        width:88%;
+    }
+    .part7 .div-form ul li .formSubmit{
+        width:100%;
+    }
+
+    ul.contact{
+        float: none;
+        width: auto;
+        padding: 0;
+        border-left:none;
+    }
+
+    ul.contact li{
+        margin: 0 1% 20px;
+        width: 100%;
+        vertical-align: top;
+    }
+
+    .part7 .part7-div .contact .reachIcon {
+        margin: 0 auto 5px;
+    }
+
+    ul.contact li p{
+        text-align: center;
+    }
+}
+
+
+/* Part 8 */
+.part8{
+    background: url(./images/slide8.jpg) no-repeat;
+    min-height: 490px;
+    background-position: center 0;
+    background-size: cover;
+}
+
+.part8-div{
+    padding-top: 165px;
+}
+
+.part8-div p{
+    font-size: 120px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-align: center;
+    font-weight: 100;
+}
+
+/* Part-8 i-Pad Mode */
+@media only screen and (min-width: 630px) and (max-width: 1000px )  {
+    .part8{
+        min-height: initial;
+        padding: 75px 4% 60px;
+    }
+    .part8-div{
+        padding-top: 0px;
+    }
+    .part8-div p{
+        font-size: 80px;
+        font-weight: 100;
+    }
+}
+
+/* Part-8 For Mobile Mode */
+@media only screen and (max-width: 631px ) {
+
+    .part8{
+        background-image: url(./images/slide8-por.jpg);
+        min-height: initial;
+        padding: 75px 4% 60px;
+    }
+    
+    .part8-div{
+        padding-top: 0px;
+    }
+    .part8-div p{
+        font-size: 46px;
+        margin-bottom: 15px;
+    }
+}
+
+
+/* Part 9 */
+.part9{
+    background: #a2d557;
+    height: 176px;
+}
+
+.part9-div{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.part9-div .footer-left p{
+    color: #fff;
+    text-align: left;
+    font-family: gotham_book;
+    font-size: 20px;
+    padding: 8px 0;
+}
+
+.part9-div .footer-right{
+    margin-left: -50px;
+}
+
+.part9-div .footer-right .text{
+    margin-right: 20px;
+    margin-left: -15px;
+    width: 155px;
+    line-height: 44px;
+    font-family: gotham_book;
+    color: #fff;
+    font-size: 25px;
+}
+
+.part9-div .footer-right p{
+    color: #fff;
+    text-align: left;
+    font-family: gotham_medium;
+    font-size: 15px;
+    font-weight: bold;
+    float: right;
+    padding: 18px 90px 14px 0;
+}
+.part9-div .footer-right ol{
+    display: flex;
+}
+
+.part9-div .footer-right .twitter{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+/* Part-9 For Mobile Mode */
+@media only screen and (max-width: 631px ){
+    
+    .part9{
+        height: auto;
+    }
+
+    .part9-div {
+        padding-top: 25px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .part9-div .footer-left p {
+        text-align: center;
+        font-size: 16px;
+        padding: 8px 0;
+    }
+    
+    .part9-div .footer-right{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: auto;
+        margin-left: 0px;
+    }
+
+    .part9-div .footer-right ol{
+        padding-top: 15px;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+
+    .part9-div .footer-right .text{
+        text-align: center;
+        margin: 0px;
+        line-height: 22px;
+    }
+
+    .part9-div .footer-right ol li{
+        margin: 0 2%;
+    }
+
+    .part9-div .footer-right p {
+        padding: 18px 0px 14px 0;
+        margin-left: 5px;
+    }
+}
